@@ -1,0 +1,249 @@
+/*
+ *
+ *==Bootstrap changes==*
+                       *
+                       */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="radio"]:focus,
+.uneditable-input:focus {   
+  border: 1px solid #a183de;
+  box-shadow: 0 1px 1px #a183de inset, 0 0 8px #a183de;
+  outline: 0 none;
+}
+/**/
+
+body {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*
+ *
+ *==header==*
+            *
+            */
+header {
+  height: 50px;
+}
+header nav.navbar {
+  background-color: #342745 !important;
+}
+header .buttons-connections button:not(:first-child) {
+  margin-left: 8px;
+}
+header .buttons-connections button:not(:last-child) {
+  margin-right: 8px;
+}
+/**/
+
+/*
+ *
+ *==content==*
+             *
+             */
+.content-block {
+  background-color: #dce1e8;
+  border: #bdc2c9 1px solid;
+  width: 100%;
+  max-width: 1000px;
+  padding-top: 0;
+  margin: auto;
+}
+.content-block.connection {
+  max-width: 500px;
+}
+.content-block.inscription {
+  max-width: 730px;
+}
+.content-header {
+  background-color: #ebf1fa;
+  height: 80px;
+  border-bottom: #bdc2c9 1px solid;
+  margin-bottom: 10px;
+}
+.content-header > * {
+  height: 100%;
+  position: relative;
+}
+.connection .content-header img {
+  left: -7em;
+}
+.inscription .content-header img {
+  left: -14em;
+}
+.content-header .content-title {
+  top: 0.2em;
+  left: -1.15em;
+}
+.content-title {
+  text-align: left;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+.content-body {
+  padding: 15px;
+}
+/**/
+
+/*
+ *
+ *==connection && inscription==*
+															 *
+															 */
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+}
+.form-signin ::placeholder {
+  font-size: 0.8em;
+}
+.form-signin label.required:after {
+  content: " *";
+  font-weight: bold;
+}
+.connection .form-signin button[type="submit"] {
+  margin-top: 33px;
+}
+.inscription .form-signin #fullAddress .form-group:not(:first-child) {
+  padding-left: 0px;
+}
+.inscription .form-signin #fullAddress .form-group:not(:last-child) {
+  padding-right: 0px;
+}
+.inscription .form-signin #fullAddress .form-group:not(:first-child) input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.inscription .form-signin #fullAddress .form-group:not(:last-child) input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.buttons-student-former {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #959aa1;
+}
+.buttons-student-former.is-invalid div.status-valid {
+  margin-left: 15px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-position: left calc(0em) center;
+  background-size: calc(2em);
+  background-repeat: no-repeat;
+}
+.buttons-student-former.is-valid div.status-valid {
+  margin-left: 15px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-position: left calc(0em) center;
+  background-size: calc(2em);
+  background-repeat: no-repeat;
+}
+.buttons-student-former .btn-group {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.inscription .form-signin .btn-group {
+  width: 60%;
+  height: 5em;
+}
+.inscription .form-signin .btn-purple,
+header .buttons-connections .btn-purple {
+  color: #fff;
+  background-color: #7d58c4;
+  border-color: #54388a;
+}
+.inscription .form-signin .btn-purple {
+  font-size: 1.5em;
+  padding: 4.42%;
+}
+header .buttons-connections .btn-purple {
+  font-size: 1.2em;
+}
+.inscription .form-signin .btn-purple:hover,
+header .buttons-connections .btn-purple:hover {
+  color: #fff;
+  background-color: #4b3673;
+  border-color: #38265c;
+}
+.inscription .form-signin .btn-purple:focus,
+header .buttons-connections .btn-purple:focus,
+.btn-purple.focus {
+  color: #fff;
+  background-color: #4b3673;
+  border-color: #38265c;
+}
+.inscription .form-signin .btn-purple.disabled,
+header .buttons-connections .btn-purple.disabled,
+.btn-purple:disabled {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+}
+.inscription .form-signin .btn-purple:not(:disabled):not(.disabled):active,
+.inscription .form-signin .btn-purple:not(:disabled):not(.disabled).active,
+header .buttons-connections .btn-purple:not(:disabled):not(.disabled):active,
+header .buttons-connections .btn-purple:not(:disabled):not(.disabled).active,
+.show > .btn-purple.dropdown-toggle {
+  color: #fff;
+  background-color: #4b3673;
+  border-color: #38265c;
+}
+.inscription .form-signin .btn-purple:not(:disabled):not(.disabled):active:focus,
+.inscription .form-signin .btn-purple:not(:disabled):not(.disabled).active:focus,
+header .buttons-connections .btn-purple:not(:disabled):not(.disabled):active:focus,
+header .buttons-connections .btn-purple:not(:disabled):not(.disabled):active:focus,
+.show > .btn-purple.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #4b3673;
+}
+.form-errors {
+  margin-bottom: 20px;
+}
+.btn-group label {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+.is-invalid .btn-group .btn,
+.is-valid .btn-group .btn {
+  padding-right: calc(1.5em + 0.75rem); background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+.is-invalid .btn-group .btn,
+.is-invalid .btn-group .btn:focus {
+  border: 1px solid #dc3545;
+}
+.is-valid .btn-group .btn,
+.is-valid .btn-group .btn:focus {
+  border: 1px solid #28a745;
+}
+.btn-group-toggle .btn input[type='radio'] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+  width: 100%;
+}
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+.error:before {
+  content: '* ';
+}
+
+/**/
