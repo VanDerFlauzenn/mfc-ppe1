@@ -89,7 +89,7 @@
 				<button class="btn btn-lg btn-primary btn-block" type="submit" name="sendConnection">Se connecter</button>
 				<div class="mt-2 mb-3">
 			    <label>
-			      Vous n'avez pas de compte ? <a href="./inscription">Inscrivez-vous !</a>
+			      Vous n'avez pas de compte ? <a href="./inscription.php">Inscrivez-vous !</a>
 			    </label>
 				</div>
 			</form>

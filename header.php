@@ -27,17 +27,17 @@
 			<?php 
 				if ($session_bool) {
 			?>
-		  <button class="btn btn-purple my-2 my-sm-0" type="button" onclick="window.location.href = './deconnection';">Se déconnecter</button>
+		  <button class="btn btn-purple my-2 my-sm-0" type="button" onclick="window.location.href = './deconnection.php';">Se déconnecter</button>
 			<?php
 				} else {
 					if ($current_file_name !== "inscription.php") {
 			?>
-		  <button class="btn btn-purple my-2 my-sm-0" type="button" onclick="window.location.href = './inscription';">S'inscrire</button>
+		  <button class="btn btn-purple my-2 my-sm-0" type="button" onclick="window.location.href = './inscription.php';">S'inscrire</button>
 		  <?php
 					}
 					if ($current_file_name !== "connection.php") {
 		  ?>
-		  <button class="btn btn-purple my-2 my-sm-0" type="button" onclick="window.location.href = './connection';">Se connecter</button>
+		  <button class="btn btn-purple my-2 my-sm-0" type="button" onclick="window.location.href = './connection.php';">Se connecter</button>
 			<?php
 					}
 				}

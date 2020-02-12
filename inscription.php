@@ -121,7 +121,7 @@
 			<span class="content-title">Inscription</span>
 		</div>
 		<div class="content-body">
-			<form class="form-signin" method="POST" action="inscription">
+			<form class="form-signin" method="POST" action="inscription.php">
 				<div class="form-errors">
 				<?php
 						if (isset($passwordMatchRequired) AND $passwordMatchRequired === "true") {

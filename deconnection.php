@@ -8,6 +8,6 @@ session_destroy();
 setcookie('id', '');
 setcookie('username', '');
 
-header("Location: index");
+header("Location: ./index.php");
 
 ?>
