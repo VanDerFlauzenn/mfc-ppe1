@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 10 fév. 2020 à 20:19
+-- Généré le :  mer. 12 fév. 2020 à 17:57
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -19,11 +19,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `mfc2`
---
+-- Base de données :  `mfc`
 
-CREATE DATABASE IF NOT EXISTS mfc2 DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `mfc2`;
+CREATE DATABASE IF NOT EXISTS mfc DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `mfc`;
+
+--
 
 -- --------------------------------------------------------
 
@@ -61,16 +62,21 @@ CREATE TABLE IF NOT EXISTS `student_interested_in_formation` (
   `formation_id` int(11) NOT NULL,
   `registered` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `student_interested_in_formation`
 --
 
 INSERT INTO `student_interested_in_formation` (`id`, `student_id`, `formation_id`, `registered`) VALUES
-(1, 2, 1, 1),
-(2, 2, 2, 0);
-(3, 3, 1, 0);
+(1, 2, 1, 2),
+(13, 17, 2, 1),
+(4, 2, 2, 1),
+(12, 2, 2, 1),
+(11, 2, 1, 0),
+(10, 2, 1, 0),
+(9, 2, 1, 0),
+(14, 2, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -89,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `zip` varchar(16) DEFAULT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `users`
@@ -98,8 +104,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `address`, `city`, `zip`, `status`) VALUES
 (1, 'admin', 'admin', 'admin@mfc.com', NULL, NULL, NULL, 0),
 (2, 'eleve', 'eleve', 'eleve@mfc.com', NULL, NULL, NULL, 1),
-(3, 'eleve2', 'eleve2', 'eleve2@mfc.com', NULL, NULL, NULL, 1),
-(4, 'formateur', 'formateur', 'formateur@mfc.com', NULL, NULL, NULL, 2),
+(3, 'formateur', 'formateur', 'formateur@mfc.com', NULL, NULL, NULL, 2),
+(16, 'yolo', 'yolo', 'osef@yolo.com', NULL, NULL, NULL, 1),
+(17, 'adminh', 'addd', 'adsfjl@dfsdsf.fr', NULL, NULL, NULL, 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
