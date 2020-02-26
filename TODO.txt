@@ -5,7 +5,7 @@ Fonctionnel :
 - connection form inputs .is-valid .is-invalid
 - use cookies
 
-Technique :
+Technique: yolo
 - content-title to center
 - content-block background-color
 - header background-color
