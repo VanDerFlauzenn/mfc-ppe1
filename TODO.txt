@@ -1,4 +1,4 @@
-Fonctionnel :
+﻿Fonctionnel :
 - pouvoir s'inscrire à une formation
 - afficher une formation si il y a une liste d'interessés
 - afficher la liste des utilisateurs interessés à une formation
@@ -9,3 +9,5 @@ Technique: yolo
 - content-title to center
 - content-block background-color
 - header background-color
+
+MeOwnicOrn le best
